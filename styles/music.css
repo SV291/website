@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap');
+
+.ba {
+  background-image: linear-gradient(90deg, rgba(131, 58, 180, 1) 14%, rgba(253, 29, 29, 1) 43%, rgba(252, 176, 69, 1) 83%); 
+  background-size: 200% 100%;
+  animation: gradient-flow 3s ease infinite;
+  margin: 0;
+  padding: 10px;
+  border: 2px solid coral;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+.name {
+  color: #bcb02b;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Times New Roman', sans-serif;
+  text-align: center;
+}
+
+.centr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.audio {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

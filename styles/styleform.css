@@ -1,0 +1,114 @@
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea {
+margin-left: 20px;
+min-height: 140px;
+max-width: 193px;
+max-height: 180px;
+min-width: 193px;
+
+}
+
+.hs {
+  background-color: blueviolet;
+  border-radius: 30px;
+  margin-left: 20px;
+  width: 200px;
+  display: block;
+  margin-top: 15px;
+}
+
+label {
+  margin-left: 20px;
+}
+
+input {
+  margin-left: 20px;
+  width: 192px;
+}
+select {
+  margin-left: 20px;
+}
+
+#form1 {
+  border: 5px solid black; 
+  border-radius: 30px;
+  background-color: aqua;
+  display: block;
+  margin-left: 90px;
+  margin-right: 90px;
+  min-width: 245px;
+  height: 500px;
+}
+
+#form2 {
+  display: block;
+  background-color: aqua;
+  border: 5px solid black;
+  border-radius: 30px;
+  margin: 90px;
+  margin-left: 90px;
+  margin-right: 90px;
+  min-width: 240px;
+  height: 250px;
+}
+
+.hs2 {
+  background-color: blueviolet;
+  border-radius: 30px;
+  margin-left: 20px;
+  width: 200px;
+  display: block;
+  margin-top: 15px;
+}
+
+.cen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.buttback  .lo {
+    margin: 10px 0 0 0;
+    max-width:25px;
+    transition: .25s;
+}
+
+.lo:hover {
+opacity: 0.5;
+transition: .25s;
+}
+
+.buttback {
+  background: none;
+    border: none;
+}
+
+.textareag {
+  text-align: center;
+  margin: 3px 0 0 0;
+}
+
+.tit {
+display: flex;
+gap: 5px;
+}
+
+.hs:hover {
+transition: .25s;
+background-color:aquamarine;
+}
+
+.hs2:hover {
+transition: .25s;
+background-color:aquamarine;
+}
+
+
+button {
+  transition: .25s;
+}

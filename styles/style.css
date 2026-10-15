@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap');
+
+
+.indexheader {
+  background-color: #138879;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 24px;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px 0 0 0;
+}
+
+
+.reg {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 24px;
+  margin-left: auto;
+} 
+
+
+.but {
+  background-color: #7ca308;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 4px 12px;
+  cursor: pointer;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+
+#main-nav {
+  background-color: #e2f19d;
+  padding: 20px;
+  margin: 25px 0;
+  border: 2px solid #64d65e;
+  border-radius: 15px;
+  max-width: 250px;
+  width: 100%;
+}
+
+.indexfooter {
+  background-color: #1fa87b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 24px;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px 0 0 0 ;
+}
+
+.table1 {
+  background-color: #e2f19d;
+  padding: 2px;
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+}
+
+.foo {  
+  text-align: center;
+  background-color: #e2f19d;
+  padding: 20px;
+  margin: 25px 0;
+  border: 2px solid #64d65e;
+  border-radius: 15px;
+  max-width: 250px;
+  width: 100%;
+
+}
+
+.roo {
+  margin: 0px 10px 0 10px;
+}
+
+.doo {
+  text-align: center;
+  background-color: #e2f19d;
+  padding: 20px;
+  margin: 25px 0;
+  border: 2px solid #64d65e;
+  border-radius: 15px;
+  max-width: 250px;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.table-section {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
