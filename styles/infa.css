@@ -22,7 +22,8 @@
   border: 4px solid rgb(150, 202, 67);
   padding: 10px;  
   box-sizing: border-box;
-  width: 790px;
+  width: 90%;
+  max-width: 100%;
 }
 
 .styles_for {

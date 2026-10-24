@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 24px;
   position: relative;
   border-radius: 10px;
@@ -134,13 +135,24 @@ main {
     max-width: none;
   }
   .table1 {
-    max-width: 100%;
-    width: auto;
+    width: 90%;
+    max-width: 900px;
     height: auto;
-    min-width: 500px;
   }
   .table1 th, .table1 td {
     padding: 15px 25px;
+  }
+
+  .reg {
+    gap: 12px;
+    font-size: 18px;
+    align-items: center;
+  }
+
+  .but {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 0;
   }
 }
 
@@ -150,8 +162,20 @@ main {
 @media (max-width: 767px) {
   .indexheader {
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     text-align: center;
+    padding: 25px 20px;
+    margin: 10px 10px 0 10px;
+  }
+
+  .indexheader h1 {
+    margin: 0;
+  }
+
+  .but {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
   }
   
   .reg {
