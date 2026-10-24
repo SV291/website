@@ -113,3 +113,94 @@ main {
   justify-content: center;
   margin-top: 20px;
 }
+
+
+
+
+@media (min-width: 1280px) {
+  .indexheader, main, .indexfooter {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+@media (max-width: 1279px) {
+  .foo, .doo, #main-nav {
+    flex: 1;
+    min-width: 250px;
+    max-width: none;
+  }
+  .table1 {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    min-width: 500px;
+  }
+  .table1 th, .table1 td {
+    padding: 15px 25px;
+  }
+}
+
+
+
+
+@media (max-width: 767px) {
+  .indexheader {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .reg {
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .indexheader form, .but {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .foo, .doo, #main-nav {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .table-section {
+    width: 100%;
+    overflow-x: auto; 
+    display: block;
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+  
+  .table-section::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .table1 {
+    min-width: 420px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .table1 th, .table1 td {
+    padding: 10px;
+  }
+  
+  .indexfooter {
+    justify-content: center;
+  }
+}

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 label {
   display: block;
   margin-bottom: 10px;
@@ -111,4 +115,72 @@ background-color:aquamarine;
 
 button {
   transition: .25s;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1280px) {
+  .cen {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 1279px) {
+  .cen {
+    height: auto;      
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  #form1, #form2 {
+    margin: 0;
+    height: auto;
+    padding-bottom: 25px;
+    max-width: 260px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .cen {
+    flex-direction: column; 
+    gap: 25px;
+    padding: 40px 15px;
+  }
+
+  #form1, #form2 {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  form label, form input, form select, form textarea, form button.hs, form button.hs2 {
+    margin-left: 0;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+  }
+
+  form input, form select, form textarea {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  form button.hs, form button.hs2 {
+    margin-top: 20px;  
+    padding: 12px;
+    font-size: 16px;
+  }
 }
