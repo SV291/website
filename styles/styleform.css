@@ -239,6 +239,7 @@ html, body {
     text-align: center;
     margin-left: 0;
     gap: 15px;
+    margin-left: 10px;
   }
 
   .but {
@@ -270,5 +271,9 @@ html, body {
     width: 100%;
     max-width: none;
     min-width: 0;
+  }
+
+  .indexheader {
+    margin-left: 10px;
   }
 }
