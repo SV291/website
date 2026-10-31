@@ -1,0 +1,290 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.indexheader {
+  background-color: #138879;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px 0 0 0;
+}
+
+.indexfooter {
+  background-color: #1fa87b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 24px;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px 0 0 0 ;
+}
+
+.reg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    font-size: 20px;
+    margin-left: auto;
+} 
+
+.but {
+  background-color: #7ca308;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 4px 12px;
+  cursor: pointer;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+
+
+
+.composition {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 20px;
+    background: rgb(243, 133, 133);
+}
+.composition h2 {
+    margin-bottom: 10px;
+}
+.grid {
+    display: grid;
+    gap: 10px;
+}
+.block {
+    background: rgb(223, 245, 144);
+    border: 1px black;
+    min-height: 80px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.grid-main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 120px 120px 80px;
+
+    grid-template-areas:
+        "main main top-left top-right"
+        "main main middle-left middle-right"
+        "bottom bottom bottom bottom";
+}
+.main-block {
+    grid-area: main;
+}
+.grid-main .top-left {
+    grid-area: top-left;
+}
+.grid-main .top-right {
+    grid-area: top-right;
+}
+.grid-main .middle-left {
+    grid-area: middle-left;
+}
+.grid-main .middle-right {
+    grid-area: middle-right;
+}
+.grid-main .bottom-block {
+    grid-area: bottom;
+}
+
+
+.grid-sidebar {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 80px;
+}
+.grid-sidebar .top-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.grid-sidebar .top-middle {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.large-block {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+}
+.grid-sidebar .middle-left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.grid-sidebar .middle-middle {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.grid-sidebar .bottom-left {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+.grid-sidebar .bottom-right {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+}
+
+
+.grid-alternating {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px;
+}
+
+.grid-alternating .wide-left {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.grid-alternating .small-top {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.grid-alternating .small-right {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.grid-alternating .small-left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.grid-alternating .wide-middle {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.grid-alternating .small-bottom {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+
+.grid-tall-left {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 80px;
+}
+
+.tall-block {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.grid-tall-left .top-middle {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.grid-tall-left .top-right {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+.grid-tall-left .middle-middle {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.grid-tall-left .middle-right {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+.grid-tall-left .bottom-block {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+
+.grid-rows {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 100px 80px;
+}
+
+.narrow-top {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.wide-top {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+}
+
+.wide-middle {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.narrow-middle {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.grid-rows .bottom-block {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+
+/* Планшеты */
+
+@media (max-width: 768px) {
+
+    .indexheader {
+        flex-wrap: wrap;
+    }
+    .reg {
+        gap: 10px;
+        font-size: 16px;
+    }
+    .composition {
+        margin: 12px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .indexheader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .reg {
+        flex-direction: column;
+    }
+    .but {
+        margin: 0;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+    }
+    .grid > div {
+        grid-column: auto;
+        grid-row: auto;
+        grid-area: auto;
+    }
+}
+@media (max-width: 900px) {
+    .indexheader {
+        flex-wrap: wrap;
+    }
+
+    .reg {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
