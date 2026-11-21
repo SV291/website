@@ -41,7 +41,7 @@
 }
 
 .reg a {
-  color: #ffffff;
+  color: #071f4f;
   text-decoration: none;
   padding: 6px 12px;
   border-radius: 8px;
@@ -60,7 +60,7 @@
 
 .but {
   background-color: #7ca308;
-  color: #ffffff;
+  color: #071f4f;
   font-size: 24px;
   margin-left: 20px;
   margin-right: 20px;
@@ -305,7 +305,7 @@ html, body {
     margin-left: 0;
     margin-right: 0;
   }
-  
+
   .cen {
     flex-direction: column;
     align-items: center;
