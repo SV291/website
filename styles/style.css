@@ -17,6 +17,7 @@
 }
 
 
+
 .reg {
   display: flex;
   flex-direction: row;
@@ -25,6 +26,23 @@
   margin-left: auto;
 } 
 
+.reg a {
+  color: #071f4f;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.reg a:hover {
+  background-color: #0e665b;
+  color: #e2f19d;
+}
+
+.reg a:active {
+  background-color: #09473f;
+}
 
 .but {
   background-color: #7ca308;
@@ -35,7 +53,26 @@
   cursor: pointer;
   border: 2px solid grey;
   border-radius: 10px;
+  color: #071f4f;
+  transition: background-color 200ms ease, transform 150ms ease, box-shadow 200ms ease;
+
 }
+
+.but:hover {
+  background-color: #8eb90a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.but:active {
+  background-color: #658506;
+  transform: scale(0.97);
+}
+
+.reg a:focus-visible,#main-nav a:focus-visible, .but:focus-visible {
+  outline: 3px solid #d3b671;
+  outline-offset: 3px;
+}
+
 
 
 #main-nav {
@@ -46,6 +83,7 @@
   border-radius: 15px;
   max-width: 250px;
   width: 100%;
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
 }
 
 .indexfooter {
@@ -81,7 +119,33 @@
 
 .roo {
   margin: 0px 10px 0 10px;
+  overflow: hidden;
+  border-radius: 10px;
 }
+
+.roo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: transform 250ms ease;
+}
+
+#main-nav a {
+  color: #138879;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+#main-nav a:hover {
+  background-color: #cbe36b;
+  color: #0b5249;
+}
+
 
 .doo {
   text-align: center;
@@ -92,6 +156,7 @@
   border-radius: 15px;
   max-width: 250px;
   width: 100%;
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
 }
 
 main {
@@ -226,5 +291,44 @@ main {
   
   .indexfooter {
     justify-content: center;
+  }
+}
+  
+@media (hover: hover) {
+  .foo:hover,
+  .doo:hover,
+  #main-nav:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: #138879;
+  }
+
+  .foo:hover .roo img {
+    transform: scale(1.03);
+  }
+
+  #main-nav a:hover {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reg a,
+  #main-nav a,
+  .but,
+  .foo,
+  .doo,
+  #main-nav,
+  .roo img {
+    transition: none;
+  }
+
+  .foo:hover,
+  .doo:hover,
+  #main-nav:hover,
+  .foo:hover .roo img,
+  #main-nav a:hover,
+  .but:active {
+    transform: none;
   }
 }
